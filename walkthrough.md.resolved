@@ -1,0 +1,43 @@
+# MindAlert - Walkthrough
+
+## Overview
+MindAlert is a high-fidelity, mobile-first React application designed for dementia detection and cognitive monitoring. It runs entirely locally in the browser with no external API dependencies.
+
+## Features Implemented
+
+### 1. Authentication Flow
+- **Entry Point**: A welcoming screen that asks for the user's name (e.g., "Grandpa").
+- **State Management**: The name is stored in the local app state and persists during the session.
+
+### 2. Home Dashboard
+- **Risk Level**: A visual progress bar indicating 'Low', 'Moderate', or 'High' risk based on test performance.
+- **Navigation**: Large, accessible cards for the three main modules: Memory Test, Activity Tracker, and Caregiver Notes.
+- **Aesthetic**: Uses the "Trustworthy Health" palette (Teal, Blue, Orange) with glassmorphism effects.
+
+### 3. Daily Memory Test
+- **Multi-step Wizard**:
+  1.  **Text Question**: "What is your son's name?"
+  2.  **Image Recognition**: Uses uploaded family/city images.
+  3.  **Object ID**: Identifies objects from images.
+- **Logic**: Scores the quiz and updates the global "Risk Level" dynamically.
+
+### 4. Activity Tracker
+- **Visualization**: A weekly bar chart (powered by `recharts`) showing completed tasks.
+- **Status Cards**: Highlights sleep pattern changes and missed tasks.
+
+### 5. Caregiver Notes
+- **Local Logic Engine**: Type a note (e.g., "Patient was confused"). The app analyzes keywords:
+  -   'lost', 'aggressive' -> **Urgent**
+  -   'forgot', 'confused' -> **Concerning**
+  -   Default -> **Stable**
+- **History**: Displays a list of tagged notes with timestamps.
+
+## Technical Details
+- **Stack**: Vite + React + TypeScript + Tailwind CSS v4.
+- **Styling**: [index.css](file:///Users/rahulshirol/.gemini/antigravity/brain/3a648b5a-7f95-45c3-830a-80a89f10f15b/src/index.css) configured with Tailwind v4 `@theme` variables.
+- **Build**: Passes `tsc` and `vite build`.
+
+## Verification
+- **Build Status**: ✅ Success
+- **Type Check**: ✅ No errors
+- **Manual Test**: Run `npm run preview` to test the full flow.

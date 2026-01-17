@@ -1,0 +1,26 @@
+# MindAlert - Development Tasks
+
+- [/] Project Initialization
+    - [/] Set up Vite + React + TypeScript environment <!-- id: 0 -->
+    - [x] Configure Tailwind CSS <!-- id: 1 -->
+    - [x] Organize assets (uploaded images) <!-- id: 2 -->
+- [/] Core Architecture
+    - [/] Create layout wrapper (Mobile container, "Trustworthy Health" palette, Global Styles) <!-- id: 3 -->
+    - [/] Implement State-Driven Routing (Context/State for current view) <!-- id: 4 -->
+- [x] Feature Implementation
+    - [x] **Auth Page** (Entry point, Name input) <!-- id: 5 -->
+    - [x] **Home Screen** (Dashboard, Risk Level, Navigation) <!-- id: 6 -->
+    - [x] **Memory Test**
+        - [x] Infrastructure (State management for quiz) <!-- id: 7 -->
+        - [x] Questions Data (Text, Image, Object ID) <!-- id: 8 -->
+        - [x] UI Implementation <!-- id: 9 -->
+    - [x] **Activity Tracker**
+        - [x] Integration with Recharts <!-- id: 10 -->
+        - [x] Stats cards <!-- id: 11 -->
+    - [x] **Caregiver Notes**
+        - [x] UI (Input + List) <!-- id: 12 -->
+        - [x] Logic Engine (Keyword analysis) <!-- id: 13 -->
+- [x] Refinement & Polish
+    - [x] Styling review (Glassmorphism, Shadows, Colors) <!-- id: 14 -->
+    - [x] Accessibility check <!-- id: 15 -->
+    - [x] Final "White Screen" verification <!-- id: 16 -->
